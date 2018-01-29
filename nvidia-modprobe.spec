@@ -1,5 +1,5 @@
 Name:           nvidia-modprobe
-Version:        390.12
+Version:        390.25
 Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
@@ -40,6 +40,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Mon Jan 29 2018 Leigh Scott <leigh123linux@googlemail.com> - 390.25-1
+- Update to 390.25
+
 * Thu Jan 11 2018 Leigh Scott <leigh123linux@googlemail.com> - 390.12-1
 - Update to 390.12
 
