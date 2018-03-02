@@ -1,6 +1,6 @@
 Name:           nvidia-modprobe
 Version:        390.25
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
@@ -40,6 +40,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Fri Mar 02 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 390.25-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
+
 * Mon Jan 29 2018 Leigh Scott <leigh123linux@googlemail.com> - 390.25-1
 - Update to 390.25
 
