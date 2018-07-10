@@ -1,12 +1,12 @@
 Name:           nvidia-modprobe
-Version:        390.48
+Version:        396.24
 Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
 URL:            https://download.nvidia.com/XFree86/%{name}/
 Source0:        %{url}/%{name}-%{version}.tar.bz2
-ExclusiveArch:  x86_64 i686 armv7hl
+ExclusiveArch:  x86_64
 
 BuildRequires:  m4
 
@@ -40,6 +40,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Fri May 04 2018 Leigh Scott <leigh123linux@googlemail.com> - 396.24-1
+- Update to 396.24
+
 * Thu Mar 29 2018 Leigh Scott <leigh123linux@googlemail.com> - 390.48-1
 - Update to 390.48
 
