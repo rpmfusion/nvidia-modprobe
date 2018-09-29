@@ -1,6 +1,7 @@
 Name:           nvidia-modprobe
+Epoch:          3
 Version:        410.57
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
@@ -41,6 +42,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Sat Sep 29 2018 Leigh Scott <leigh123linux@googlemail.com> - 3:410.57-2
+- Match the cuda repo epoch
+
 * Thu Sep 20 2018 Leigh Scott <leigh123linux@googlemail.com> - 410.57-1
 - Update to 410.57 beta
 
