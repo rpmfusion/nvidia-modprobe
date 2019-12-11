@@ -1,7 +1,7 @@
 Name:           nvidia-modprobe
 Epoch:          3
 Version:        440.44
-Release:        1                                                                                                                                                                                                                                       %{?dist}
+Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
