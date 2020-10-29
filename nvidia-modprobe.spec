@@ -1,6 +1,6 @@
 Name:           nvidia-modprobe
 Epoch:          3
-Version:        455.28
+Version:        455.38
 Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
@@ -42,6 +42,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Thu Oct 29 2020 Leigh Scott <leigh123linux@gmail.com> - 3:455.38-1
+- Update to 455.38 release
+
 * Wed Oct  7 2020 Leigh Scott <leigh123linux@gmail.com> - 3:455.28-1
 - Update to 455.28 release
 
