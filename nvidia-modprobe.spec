@@ -1,12 +1,12 @@
 Name:           nvidia-modprobe
 Epoch:          3
-Version:        465.19.01
+Version:        465.24.02
 Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
-URL:            https://download.nvidia.com/XFree86/%{name}/
-Source0:        %{url}/%{name}-%{version}.tar.bz2
+URL:            https://github.com/NVIDIA/%{name}/
+Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 ExclusiveArch:  x86_64
 
 BuildRequires:  gcc
@@ -42,6 +42,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Thu Apr 15 2021 Leigh Scott <leigh123linux@gmail.com> - 3:465.24.02-1
+- Update to 465.24.02 release
+
 * Wed Mar 31 2021 Leigh Scott <leigh123linux@gmail.com> - 3:465.19.01-1
 - Update to 465.19.01 beta
 
