@@ -1,13 +1,13 @@
 Name:           nvidia-modprobe
 Epoch:          3
 Version:        515.76
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
 URL:            https://github.com/NVIDIA/%{name}
 Source0:        %url/archive/%{version}/%{name}-%{version}.tar.gz
-ExclusiveArch:  x86_64
+ExclusiveArch:  x86_64 aarch64
 
 BuildRequires:  gcc
 BuildRequires:  m4
@@ -42,6 +42,9 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
+* Sun Sep 25 2022 Dennnis Gilmore <dennis@ausil.us> - 3:515.76-2
+- add aarch64 support
+
 * Wed Sep 21 2022 Leigh Scott <leigh123linux@gmail.com> - 3:515.76-1
 - Update to 515.76
 
