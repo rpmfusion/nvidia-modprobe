@@ -53,4 +53,10 @@ nvidia-modprobe-*.tar.gz
 /nvidia-modprobe-495.44.tar.bz2
 /nvidia-modprobe-535.104.05.tar.bz2
 /nvidia-modprobe-535.113.01.tar.bz2
+<<<<<<< HEAD
 /nvidia-modprobe-535.129.03.tar.bz2
+=======
+/nvidia-modprobe-545.23.06.tar.bz2
+/nvidia-modprobe-545.29.02.tar.bz2
+/nvidia-modprobe-545.29.06.tar.bz2
+>>>>>>> master
