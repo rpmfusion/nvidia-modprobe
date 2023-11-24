@@ -1,12 +1,13 @@
 Name:           nvidia-modprobe
 Epoch:          3
-Version:        525.116.04
+Version:        545.29.06
 Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
 License:        MIT and GPLv2+
 URL:            https://github.com/NVIDIA/%{name}
-Source0:        %url/archive/%{version}/%{name}-%{version}.tar.gz
+#Source0:        %url/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://download.nvidia.com/XFree86/%{name}/%{name}-%{version}.tar.bz2
 ExclusiveArch:  x86_64 aarch64
 
 BuildRequires:  gcc
@@ -42,8 +43,47 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 
 %changelog
-* Tue May 16 2023 Nicolas Chauvet <kwizart@gmail.com> - 3:525.116.04-1
-- Update to 525.116.04
+* Wed Nov 22 2023 Leigh Scott <leigh123linux@gmail.com> - 3:545.29.06-1
+- Update to 545.29.06 release
+
+* Tue Oct 31 2023 Leigh Scott <leigh123linux@gmail.com> - 3:545.29.02-1
+- Update to 545.29.02 release
+
+* Wed Oct 18 2023 Leigh Scott <leigh123linux@gmail.com> - 3:545.23.06-1
+- Update to 545.23.06 beta
+
+* Fri Sep 22 2023 Leigh Scott <leigh123linux@gmail.com> - 3:535.113.01-1
+- Update to 535.113.01
+
+* Tue Aug 22 2023 Leigh Scott <leigh123linux@gmail.com> - 3:535.104.05-1
+- Update to 535.104.05
+
+* Wed Aug 09 2023 Leigh Scott <leigh123linux@gmail.com> - 3:535.98-1
+- Update to 535.98
+
+* Thu Aug 03 2023 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3:535.86.05-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
+
+* Tue Jul 18 2023 Leigh Scott <leigh123linux@gmail.com> - 3:535.86.05-1
+- Update to 535.86.05
+
+* Thu Jun 15 2023 Leigh Scott <leigh123linux@gmail.com> - 3:535.54.03-1
+- Update to 535.54.03
+
+* Tue May 30 2023 Leigh Scott <leigh123linux@gmail.com> - 3:535.43.02-1
+- Update to 535.43.02 beta
+
+* Fri Mar 24 2023 Leigh Scott <leigh123linux@gmail.com> - 3:530.41.03-1
+- Update to 530.41.03
+
+* Sun Mar 05 2023 Leigh Scott <leigh123linux@gmail.com> - 3:530.30.02-1
+- Update to 530.30.02 beta
+
+* Fri Feb 10 2023 Leigh Scott <leigh123linux@gmail.com> - 3:525.89.02-1
+- Update to 525.89.02
+
+* Thu Jan 19 2023 Leigh Scott <leigh123linux@gmail.com> - 3:525.85.05-1
+- Update to 525.85.05
 
 * Thu Jan 05 2023 Leigh Scott <leigh123linux@gmail.com> - 3:525.78.01-1
 - Update to 525.78.01
