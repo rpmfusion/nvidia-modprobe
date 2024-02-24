@@ -44,7 +44,7 @@ chmod -x %{buildroot}%{_mandir}/man1/nvidia-modprobe.1.*
 
 %changelog
 * Sat Feb 24 2024 Leigh Scott <leigh123linux@gmail.com> - 3:550.54.14-1
-- rebuilt
+- Update to 550.54.14 release
 
 * Sun Feb 04 2024 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3:550.40.07-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_40_Mass_Rebuild
