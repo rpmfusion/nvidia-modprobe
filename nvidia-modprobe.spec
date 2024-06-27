@@ -1,10 +1,6 @@
 Name:           nvidia-modprobe
 Epoch:          3
-<<<<<<< HEAD
-Version:        550.90.07
-=======
 Version:        555.58
->>>>>>> master
 Release:        1%{?dist}
 Summary:        Load the NVIDIA kernel module and create NVIDIA character device files
 
